@@ -1,0 +1,24 @@
+﻿@model List<StudentViewModel>
+
+    <h2> Student</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Phone</td>
+                <td>@product.Address</td>
+            </tr>
+           }
+        </tbody>
+    </table>
